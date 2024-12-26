@@ -45,3 +45,20 @@ Click on `Use this template`
 │   └── plugin_name
 │       └── plugin_name_spec.lua
 ```
+
+## Roadmap
+
+In general, do the following:
+
+- Doesn't rely on jot, but having jot adds functionality, gated behind vim.executable("jot")
+- Taps into Treesitter and Fzf if available to do things like make links easily
+
+- Clean up the plugin folder structure
+- Copy to system clipboard as html (requires stdin on jot), both whole buffer and selection
+- Render as html live
+- Everything in jot
+- Toc/navigation per vim markdown; Toc and symbol navigation also exits in marksman
+- Test out markmsan features, including wiki links (do they print properly?)
+- Spelling is only activated on demand (this can be a command)
+- Test link completion in marksman - it should be top of the list
+- Quick way to add links to index files (an fzf list of index files)
